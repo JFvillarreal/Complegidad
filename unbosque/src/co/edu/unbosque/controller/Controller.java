@@ -26,9 +26,9 @@ public class Controller {
 	public void actionPerformed(ActionEvent evento) {
 		// TODO Auto-generated method stub
 		if (evento.getActionCommand().equals(gui.getPanelEntrada().CONVERTIR)) {
-			//String resultado = m.procesarDato(gui.getPanelEntrada().getTxtNumero().getText());
-			String resultado1 = m.getY().procesarDatoClaseY(gui.getPanelEntrada().getTxtNumero().getText());
-			gui.getPanelResultados().getTxtMonto().setText(resultado1);
+		String resultado = m.procesarDatoClaseY(gui.getPanelEntrada().getTxtNumero().getText());
+		//	String resultado1 = m.getY().procesarDatoClaseY(gui.getPanelEntrada().getTxtNumero().getText());
+		//		gui.getPanelResultados().getTxtMonto().setText(resultado1);
 		}
 	}
 	

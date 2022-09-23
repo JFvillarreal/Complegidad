@@ -30,7 +30,7 @@ public class View extends JFrame{
 		add(panelResultados,BorderLayout.CENTER);
 		
 		//se agrega al boton ActionListener del objeto de Controlador
-		panelEntrada.getButConvertir().addActionListener(control);
+		//	panelEntrada.getButConvertir().addActionListener(control);
 	}
 
 	public PanelEntrada getPanelEntrada() {

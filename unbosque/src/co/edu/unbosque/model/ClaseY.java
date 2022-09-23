@@ -12,4 +12,6 @@ public class ClaseY {
 	public String procesarDatoClaseY(String dato) {
 		return dato+" Procesado por Clase Y";
 	}
+
+	
 }
