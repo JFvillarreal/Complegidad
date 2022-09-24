@@ -15,7 +15,7 @@ public class View extends JFrame{
 	public View(Controller control) {
 		// Definición de los parámetros básicos de la ventana principal
 		
-		setSize(500,400); //tamaño en ancho y alto en pixeles
+		setSize(600,400); //tamaño en ancho y alto en pixeles
 		setResizable(false); //Se puede cambiar el tamaño de la ventana?
 		setTitle("Título de la Ventana Principal MVC"); //tìtulo de la ventana
 		setDefaultCloseOperation(EXIT_ON_CLOSE);//qué debe hacer si cierra la ventana
