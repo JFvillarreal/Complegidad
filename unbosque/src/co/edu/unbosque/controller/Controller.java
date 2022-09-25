@@ -23,8 +23,7 @@ public class Controller implements ActionListener{
 		ventana = new VentanaPrincipal();
 		asignarOyentes();
 
-
-		le.leer();
+		//le.leer();
 		
 	}
 	

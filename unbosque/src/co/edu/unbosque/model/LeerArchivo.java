@@ -8,23 +8,25 @@ import java.io.IOException;
 public class LeerArchivo {
 
 	public void leer() {
-		
-		String a = "Archivo.txt";
 
 		try {
 			
-			BufferedReader leer = new BufferedReader(new FileReader(a));
+			BufferedReader leer = new BufferedReader(new FileReader("Archivo.txt"));
 			StringBuilder cadena = new StringBuilder();
 			String texto = null;
 			
 			while((texto = leer.readLine()) != null) {
 		    	  cadena.append(texto);
 		    }
+			
+			System.out.println(texto);
 		      
 		}catch(FileNotFoundException e) {
 			System.out.println("El Archivo No Se Encuentra");
 		}catch(IOException ioException) {
 			System.out.println("Error al leer");
+		}catch(NullPointerException nullex) {
+			System.out.println("No se pudo crear el objeto");
 		}
 			
 		
