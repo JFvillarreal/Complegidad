@@ -1,6 +1,9 @@
 package co.edu.unbosque.view;
 
 import java.awt.Color;
+import java.awt.Font;
+import java.awt.font.TextAttribute;
+import java.util.Map;
 
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -20,11 +23,18 @@ public class PanelRespuesta extends JPanel{
 	
 	public void inicializarComponentes() {
 		
+	     
 		setBackground(new Color(232,232,232));
 		setBorder(new TitledBorder("Panel de respuesta"));
 		
 		erta = new JLabel();
-		erta.setBounds(175, 70, 200, 20);
+        Font font =  new Font("Times new Roman", Font.BOLD, 20);
+        Map attributes = font.getAttributes();
+        attributes.put(TextAttribute.UNDERLINE, TextAttribute.UNDERLINE_ON);
+        erta.setFont(font.deriveFont(attributes));
+        erta.setForeground(Color.red);
+	
+		erta.setBounds(10, 70, 200, 20);
 		add(erta);
 				
 	}
