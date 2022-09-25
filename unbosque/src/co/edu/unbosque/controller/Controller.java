@@ -14,17 +14,17 @@ public class Controller implements ActionListener{
 	private VentanaPrincipal ventana;
 	private Numero n1;
 	private Numero n2;
-
-
-	private LeerArchivo le;
+	LeerArchivo le = new LeerArchivo();
+	
 
 	public Controller() {
 
+		
+		
 		ventana = new VentanaPrincipal();
 		asignarOyentes();
 
-
-		le.leer();
+		
 		
 	}
 	
@@ -48,9 +48,10 @@ public class Controller implements ActionListener{
 			aux_int = Integer.parseInt(aux);
 //			n2 = new Numero(aux_int);
 			
-			String rta = n1.getPalabra();
+			String rta = n1.setPalabra(le.leer());
 			
-			ventana.getPrespuesta().getErta().setText("El valor de la suma es "+rta);
+			
+			ventana.getPrespuesta().getErta().setText(le.leer());
 		}
 	}	
 	
