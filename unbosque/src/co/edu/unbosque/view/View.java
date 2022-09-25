@@ -17,7 +17,7 @@ public class View extends JFrame{
 		
 		setSize(500,400); //tamaño en ancho y alto en pixeles
 		setResizable(false); //Se puede cambiar el tamaño de la ventana?
-		setTitle("Título de la Ventana Principal MVC"); //tìtulo de la ventana
+		setTitle("Taller Texto"); //tìtulo de la ventana
 		setDefaultCloseOperation(EXIT_ON_CLOSE);//qué debe hacer si cierra la ventana
 		setLocationRelativeTo(null); //coloca la ventana al centro de la pantalla
 		//Establece el layout (lienzo) que vamos a utilizar dentro de la ventana principal.

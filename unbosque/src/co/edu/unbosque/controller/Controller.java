@@ -1,5 +1,6 @@
 package co.edu.unbosque.controller;
 import co.edu.unbosque.model.ClaseY;
+import co.edu.unbosque.model.LeerArchivo;
 import co.edu.unbosque.view.View;
 
 import java.awt.event.ActionEvent;
@@ -11,6 +12,7 @@ public class Controller {
 
 	private ClaseY m;
 	private View gui;
+	private LeerArchivo le;
 	
 	public Controller() {
 
@@ -20,6 +22,7 @@ public class Controller {
 		gui = new View(this);
 
 		gui.setVisible(true);
+		le.leer();
 		
 	}
 	

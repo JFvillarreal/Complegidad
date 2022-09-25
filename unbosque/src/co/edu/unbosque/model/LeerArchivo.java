@@ -7,12 +7,13 @@ import java.io.IOException;
 
 public class LeerArchivo {
 
-	public static void main(String[] args) throws ClassNotFoundException {
-		// TODO Auto-generated method stub
+	public void leer() {
+		
+		String a = "Archivo.txt";
 
 		try {
 			
-			BufferedReader leer = new BufferedReader(new FileReader("uwu.txt"));
+			BufferedReader leer = new BufferedReader(new FileReader(a));
 			StringBuilder cadena = new StringBuilder();
 			String texto = null;
 			
