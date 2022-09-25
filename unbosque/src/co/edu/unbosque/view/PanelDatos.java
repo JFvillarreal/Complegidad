@@ -58,10 +58,10 @@ public class PanelDatos extends JPanel{
 		add(bsumar);
 		bsumar.setActionCommand("SUMAR");
 		
-		brestar = new JButton("Restar");
-		brestar.setBounds(340, 150, 80, 20);
-		add(brestar);
-		brestar.setActionCommand("RESTAR");
+//		brestar = new JButton("Restar");
+//		brestar.setBounds(340, 150, 80, 20);
+//		add(brestar);
+//		brestar.setActionCommand("RESTAR");
 		
 	}
 

@@ -40,18 +40,6 @@ public class Controller implements ActionListener{
 			int rta = n1.sumarNumeros(n2);
 			
 			ventana.getPrespuesta().getErta().setText("El valor de la suma es "+rta);
-		}else if(comando.equals("RESTAR")){
-			aux = ventana.getPdatos().getCnum1().getText();
-			aux_int = Integer.parseInt(aux);
-			n1 = new Numero(aux_int);
-			
-			aux = ventana.getPdatos().getCnum2().getText();
-			aux_int = Integer.parseInt(aux);
-			n2 = new Numero(aux_int);
-			
-			int rta = n1.restarNumeros(n2);
-			
-			ventana.getPrespuesta().getErta().setText("El valor de la resta es "+rta);
 		}
 	}	
 	
