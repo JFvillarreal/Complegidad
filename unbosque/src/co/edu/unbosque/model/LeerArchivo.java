@@ -19,7 +19,11 @@ public class LeerArchivo {
 		    	  cadena.append(texto);
 		    }
 			
-			System.out.println(texto);
+			leer.close();
+			
+			String resul = cadena.toString();
+			
+			System.out.println(resul);
 		      
 		}catch(FileNotFoundException e) {
 			System.out.println("El Archivo No Se Encuentra");
