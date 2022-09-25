@@ -3,6 +3,7 @@ package co.edu.unbosque.model;
 public class Numero {
 	
 	private int num;
+	private String palabra;
 	
 	public Numero() {
 		num = 0;
@@ -16,13 +17,7 @@ public class Numero {
 		return num + otro.num;
 	}
 	
-	public int restarNumeros(Numero otro) {
-		if(num > otro.num) {
-			return num - otro.num;
-		}else {
-			return otro.num - num;
-		}
-	}
+	
 
 	public int getNum() {
 		return num;
@@ -31,5 +26,15 @@ public class Numero {
 	public void setNum(int num) {
 		this.num = num;
 	}
+
+	public String getPalabra() {
+		return palabra;
+	}
+
+	public void setPalabra(String palabra) {
+		this.palabra = palabra;
+	}
+	
+	
 	
 }
