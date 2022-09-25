@@ -37,6 +37,8 @@ public class PanelDatos extends JPanel{
 		enum1.setBounds(50, 50, 170, 20);
 		add(enum1);
 		
+		
+		
 		cnum1 = new JTextField();
 		cnum1.setBounds(240 , 50 , 250 , 20);
 		add(cnum1);

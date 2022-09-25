@@ -40,14 +40,15 @@ public class Controller implements ActionListener{
 		int aux_int = 0;
 		if(comando.equals("SUMAR")) {
 			aux = ventana.getPdatos().getCnum1().getText();
-			aux_int = Integer.parseInt(aux);
+			
+//			aux_int = Integer.parseInt(aux);
 			n1 = new Numero(aux_int);
 			
 			aux = ventana.getPdatos().getCnum2().getText();
 			aux_int = Integer.parseInt(aux);
 			n2 = new Numero(aux_int);
 			
-			int rta = n1.sumarNumeros(n2);
+			String rta = n1.getPalabra();
 			
 			ventana.getPrespuesta().getErta().setText("El valor de la suma es "+rta);
 		}
