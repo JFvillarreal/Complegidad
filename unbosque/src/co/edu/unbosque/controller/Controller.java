@@ -1,4 +1,10 @@
 package co.edu.unbosque.controller;
+<<<<<<< HEAD
+=======
+import co.edu.unbosque.model.ClaseY;
+import co.edu.unbosque.model.LeerArchivo;
+import co.edu.unbosque.view.View;
+>>>>>>> branch 'main' of https://github.com/JFvillarreal/Complegidad
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -9,13 +15,32 @@ import co.edu.unbosque.view.VentanaPrincipal;
 
 public class Controller implements ActionListener{
 	
+<<<<<<< HEAD
 	private VentanaPrincipal ventana;
 	private Numero n1;
 	private Numero n2;
+=======
+
+	private ClaseY m;
+	private View gui;
+	private LeerArchivo le;
+>>>>>>> branch 'main' of https://github.com/JFvillarreal/Complegidad
 	
 	public Controller() {
+<<<<<<< HEAD
 		ventana = new VentanaPrincipal();
 		asignarOyentes();
+=======
+
+
+		
+		m = new ClaseY();
+		gui = new View(this);
+
+		gui.setVisible(true);
+		le.leer();
+		
+>>>>>>> branch 'main' of https://github.com/JFvillarreal/Complegidad
 	}
 	
 	public void asignarOyentes() {
