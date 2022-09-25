@@ -31,8 +31,8 @@ public class Numero {
 		return palabra;
 	}
 
-	public void setPalabra(String palabra) {
-		this.palabra = palabra;
+	public String setPalabra(String palabra) {
+		return this.palabra = palabra;
 	}
 	
 	

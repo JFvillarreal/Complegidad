@@ -7,7 +7,9 @@ import java.io.IOException;
 
 public class LeerArchivo {
 
-	public void leer() {
+	public String leer() {
+		
+		String resul = null;
 
 		try {
 			
@@ -21,9 +23,10 @@ public class LeerArchivo {
 			
 			leer.close();
 			
-			String resul = cadena.toString();
+			resul = cadena.toString();
 			
 			System.out.println(resul);
+			
 		      
 		}catch(FileNotFoundException e) {
 			System.out.println("El Archivo No Se Encuentra");
@@ -32,6 +35,7 @@ public class LeerArchivo {
 		}catch(NullPointerException nullex) {
 			System.out.println("No se pudo crear el objeto");
 		}
+		return resul;
 			
 		
 		
