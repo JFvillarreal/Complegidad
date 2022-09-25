@@ -42,11 +42,11 @@ public class Controller implements ActionListener{
 			aux = ventana.getPdatos().getCnum1().getText();
 			
 //			aux_int = Integer.parseInt(aux);
-			n1 = new Numero(aux_int);
+			n1 = new Numero(aux_int, aux);
 			
 			aux = ventana.getPdatos().getCnum2().getText();
 			aux_int = Integer.parseInt(aux);
-			n2 = new Numero(aux_int);
+//			n2 = new Numero(aux_int);
 			
 			String rta = n1.getPalabra();
 			

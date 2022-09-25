@@ -9,7 +9,7 @@ public class Numero {
 		num = 0;
 	}
 	
-	public Numero( int n) {
+	public Numero( int n,String palabra) {
 		num = n;
 	}
 	
