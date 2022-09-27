@@ -11,7 +11,11 @@ import co.edu.unbosque.model.LeerArchivo;
 import co.edu.unbosque.model.Numero;
 
 import co.edu.unbosque.view.VentanaPrincipal;
-
+/**
+ * funciona para generar la interfaz y llamar metodos de los algoritmos
+ * @author Villarreal, Muños, Hernadez
+ *
+ */
 public class Controller implements ActionListener{
 	
 
@@ -34,7 +38,10 @@ public class Controller implements ActionListener{
 		
 	}
 
-	
+/**
+ * metodo para dar action listener a los botones
+ * para que el controlador pueda llamar los metodos
+ */
 	public void asignarOyentes() {
 
 		ventana.getPdatos().getBsumar().addActionListener(this);
@@ -48,6 +55,10 @@ public class Controller implements ActionListener{
 	}
 
 	@Override
+	/**
+	 * metodo para utilizar los action lister y ejecutar los algoritmos
+	 * dependiento del boton
+	 */
 	public void actionPerformed(ActionEvent e) {
 		String comando = e.getActionCommand();
 		String aux = "";

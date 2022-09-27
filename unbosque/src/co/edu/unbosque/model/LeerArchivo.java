@@ -4,7 +4,11 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-
+/**
+ * lee el archivo y lo transforma a String
+ * @author Villarreal, Muños, Hernadez
+ *
+ */
 public class LeerArchivo {
 
 	public String leer() {

@@ -9,7 +9,12 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.border.TitledBorder;
 import javax.swing.JCheckBox;
-
+/**
+ *la interfaz para que el ususario puede ingresar
+ * el praton que desea buscar 
+ * @author Villarreal, Muños, Hernadez
+ *
+ */
 public class PanelDatos extends JPanel{
 	
 	private JLabel enum1;
@@ -63,8 +68,12 @@ public class PanelDatos extends JPanel{
 		add(bsumar);
 		bsumar.setActionCommand("KMP");
 		
+		JCheckBox btnMayusculas = new JCheckBox("Desea tener en cuenta las mayusculas ?");
+		btnMayusculas.setBounds(50, 127, 97, 23);
+		add(btnMayusculas);
+		
 		brestar = new JButton("Buscar en BM");
-		brestar.setBounds(240, 123, 250, 20);
+		brestar.setBounds(340, 123, 272, 20);
 		add(brestar);
 		brestar.setActionCommand("BM");
 		

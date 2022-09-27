@@ -4,7 +4,11 @@ import java.awt.Color;
 
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
-
+/**
+ * unificacion de las interfazes en una sola
+ * @author Villarreal, Muños, Hernadez
+ *
+ */
 public class VentanaPrincipal extends JFrame{
 
 	private PanelDatos pdatos;

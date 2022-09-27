@@ -9,7 +9,11 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.border.TitledBorder;
-
+/**
+ * 
+ * @author  Villarreal, Muños, Hernadez
+ *
+ */
 public class PanelRespuesta extends JPanel{
 	
 	private JLabel erta;

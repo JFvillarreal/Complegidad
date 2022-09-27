@@ -1,5 +1,9 @@
 package co.edu.unbosque.model;
-
+/**
+ * sirve para el set palabar y get palabra
+ * @author  Villarreal, Muños, Hernadez
+ *
+ */
 public class Numero {
 	
 	private String num;

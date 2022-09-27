@@ -1,7 +1,12 @@
 package co.edu.unbosque.view;
 
 import javax.swing.JOptionPane;
-
+/**
+ * sirve para mostrar JOptionpane con mensajes de error o 
+ * sobre los resusltados de los algoritmos
+ * @author Villarreal, Muños, Hernadez
+ *
+ */
 public class VistaVentanas {
 	
 	public VistaVentanas() {
