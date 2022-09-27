@@ -28,12 +28,8 @@ public class AlgoritmoKMP {
 		for (int i = 0,j =0; i < texto.length(); i++) {
 			if (j < patron.length() && texto.charAt(i)==patron.charAt(j)) {
 				if (++j == patron.length()) {
-<<<<<<< HEAD
 					System.out.println("patrones en " + (i-j+1));
 					System.out.println(chars);
-=======
-					System.out.println("patrones en ..." + (i-j+1));
->>>>>>> branch 'main' of https://github.com/JFvillarreal/Complegidad
 				}
 			}
 			else if (j>0)
