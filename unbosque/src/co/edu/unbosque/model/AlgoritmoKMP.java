@@ -52,7 +52,7 @@ public class AlgoritmoKMP {
 			
 		}
 		
-		JOptionPane.showMessageDialog(null, "La Palabra buscada se repite: "+contador+" Veces", "?", 3);
+		JOptionPane.showMessageDialog(null, "La Palabra buscada se repite: "+contador+" Veces ", "?", 3);
 		System.out.println("veces"+contador);
 		
 	}
