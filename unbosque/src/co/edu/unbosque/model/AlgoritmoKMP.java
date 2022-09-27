@@ -29,6 +29,7 @@ public class AlgoritmoKMP {
 			if (j < patron.length() && texto.charAt(i)==patron.charAt(j)) {
 				if (++j == patron.length()) {
 					System.out.println("patrones en " + (i-j+1));
+					System.out.println(chars);
 				}
 			}
 			else if (j>0)
