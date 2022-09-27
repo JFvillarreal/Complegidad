@@ -1,5 +1,7 @@
 package co.edu.unbosque.model;
 
+import javax.swing.JOptionPane;
+
 public class AlgoritmoBM {
 
 	static int valorMaximo = 256;
@@ -27,7 +29,9 @@ public class AlgoritmoBM {
 				j--;
 			}
 			if(j<0) {
+				
 				System.out.println("patron encontrado en "+ s);
+				JOptionPane.showMessageDialog(null, "La Palabra buscada se repite en: "+s, "?", 3);
 				s+=(s + longPatron<longTexto)? longTexto - badchar[texto[s+longPatron]]:1;
 			}
 			

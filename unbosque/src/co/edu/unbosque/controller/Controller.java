@@ -38,8 +38,10 @@ public class Controller implements ActionListener{
 	public void asignarOyentes() {
 
 		ventana.getPdatos().getBsumar().addActionListener(this);
+//		ventana.getPdatos().getBrestar().addActionListener(this);
 
 			ventana.getPdatos().getBsumar().addActionListener(this);
+			ventana.getPdatos().getBrestar().addActionListener(this);
 
 
 
@@ -54,8 +56,12 @@ public class Controller implements ActionListener{
 			try {
 			aux = ventana.getPdatos().getCnum1().getText();
 			System.out.println("La palabra que se buscara es : "+aux);
+//			aux_int = Integer.parseInt(aux);
 			n1 = new Numero(aux_int, aux);
+			
 
+	
+			
 			//palabra del archivo
 			String rta = n1.setPalabra(le.leer());
 			
