@@ -33,7 +33,7 @@ public class PanelDatos extends JPanel{
 	public void inicializarComponentes() {
 		
 		setBackground(Color.cyan);
-		setBorder(new TitledBorder("Panel de datos"));
+		setBorder(new TitledBorder("Panel de datos  5"));
 		
 		enum1 = new JLabel("Ingrese la palabra a buscar: ");
 		enum1.setBounds(50, 50, 170, 20);
