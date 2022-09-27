@@ -33,9 +33,13 @@ public class Controller implements ActionListener{
 
 	
 	public void asignarOyentes() {
-		
+
+		ventana.getPdatos().getBsumar().addActionListener(this);
+//		ventana.getPdatos().getBrestar().addActionListener(this);
+
 			ventana.getPdatos().getBsumar().addActionListener(this);
 			ventana.getPdatos().getBrestar().addActionListener(this);
+
 
 
 	}
@@ -52,12 +56,18 @@ public class Controller implements ActionListener{
 //			aux_int = Integer.parseInt(aux);
 			n1 = new Numero(aux_int, aux);
 			
+
+//			aux = ventana.getPdatos().getCnum2().getText();
+//			aux_int = Integer.parseInt(aux);
+
 			aux = ventana.getPdatos().getCnum2().getText();
 			aux_int = aux;
 
 			String rta = n1.setPalabra(le.leer());
 			
-			
+
+			ventana.getPrespuesta().getErta().setText("El contenido del  archivo es: "+le.leer());
+
 			ventana.getPrespuesta().getErta().setText(le.leer());
 			}catch(NullPointerException ex) {
 				JOptionPane.showMessageDialog(null, "No hay palabra a buscar ", "?", 3);

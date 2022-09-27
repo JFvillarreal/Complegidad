@@ -8,6 +8,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.border.TitledBorder;
+import javax.swing.JCheckBox;
 
 public class PanelDatos extends JPanel{
 	
@@ -61,6 +62,10 @@ public class PanelDatos extends JPanel{
 		bsumar.setBounds(240 , 100 , 250 , 20);
 		add(bsumar);
 		bsumar.setActionCommand("BUSCAR");
+		
+		JCheckBox btnMayusculas = new JCheckBox("Desea tener en cuenta las mayusculas ?");
+		btnMayusculas.setBounds(50, 127, 97, 23);
+		add(btnMayusculas);
 		
 //		brestar = new JButton("Restar");
 //		brestar.setBounds(340, 150, 80, 20);
@@ -124,5 +129,4 @@ public class PanelDatos extends JPanel{
 	public void setBrestar(JButton brestar) {
 		this.brestar = brestar;
 	}
-	
 }

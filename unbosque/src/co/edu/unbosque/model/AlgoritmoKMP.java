@@ -38,8 +38,8 @@ public class AlgoritmoKMP {
 			}
 		}
 	}
-	public static void main(String[] args) {
-		String text = "casa";
+	public static void main(String text) {
+		 text = text;
 		String part = "ca";
 		KMP(text, part);
 	}
