@@ -1,6 +1,1 @@
-<<<<<<< HEAD
-prueba
-=======
-Hola
-asdasdasd
->>>>>>> branch 'main' of https://github.com/JFvillarreal/Complegidad
+Lo cambie xds
