@@ -24,9 +24,6 @@ public class LeerArchivo {
 			leer.close();
 			
 			resul = cadena.toString();
-			
-			System.out.println(resul);
-			
 		      
 		}catch(FileNotFoundException e) {
 			System.out.println("El Archivo No Se Encuentra");
