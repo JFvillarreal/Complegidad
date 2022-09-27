@@ -67,10 +67,6 @@ public class PanelDatos extends JPanel{
 		btnMayusculas.setBounds(50, 127, 97, 23);
 		add(btnMayusculas);
 		
-//		brestar = new JButton("Restar");
-//		brestar.setBounds(340, 150, 80, 20);
-//		add(brestar);
-//		brestar.setActionCommand("RESTAR");
 		
 	}
 

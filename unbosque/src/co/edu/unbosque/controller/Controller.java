@@ -1,9 +1,19 @@
 package co.edu.unbosque.controller;
 
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.lang.System.Logger;
+import java.lang.System.Logger.Level;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import javax.swing.JOptionPane;
+import javax.swing.JTextArea;
+import javax.swing.text.BadLocationException;
+import javax.swing.text.DefaultHighlighter;
+import javax.swing.text.Highlighter;
+import javax.swing.text.Highlighter.HighlightPainter;
 
 import co.edu.unbosque.model.AlgoritmoKMP;
 import co.edu.unbosque.model.LeerArchivo;
@@ -64,15 +74,17 @@ public class Controller implements ActionListener{
 			String rta = n1.setPalabra(le.leer());
 			
 			System.out.println("El contenido del archivo es  : "+rta);
-			alkm.iniciar(rta,aux);
 			
-			ventana.getPrespuesta().getErta().setText("El contenido del  archivo es: "+le.leer());
 
 			ventana.getPrespuesta().getErta().setText(le.leer());
+			alkm.iniciar(rta,aux);
+			
 			}catch(NullPointerException ex) {
 				JOptionPane.showMessageDialog(null, "No hay palabra a buscar ", "?", 3);
 			}
 		}
+		
+
 		
 	}
 	
