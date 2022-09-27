@@ -17,7 +17,7 @@ public class Controller implements ActionListener{
 	private VentanaPrincipal ventana;
 	private Numero n1;
 	private Numero n2;
-	private AlgoritmoKMP kmp;
+	private AlgoritmoKMP km;
 	
 	LeerArchivo le = new LeerArchivo();
 	
@@ -63,7 +63,7 @@ public class Controller implements ActionListener{
 			
 			//palabra del archivo
 			String rta = n1.setPalabra(le.leer());
-			kmp.iniciar( rta,aux);		
+			km.iniciar( rta,aux);		
 			
 			System.out.println("El contenido del archivo es  : "+rta);
 			
@@ -79,9 +79,6 @@ public class Controller implements ActionListener{
 	}
 
 
-	private void kmp.iniciar(aux_int, rta);(String rta, String aux) {
-		// TODO Auto-generated method stub
-		
-	}
+
 	
 }
