@@ -58,15 +58,19 @@ public class PanelDatos extends JPanel{
 		eoperaciones.setBounds(50, 100, 170, 20);
 		add(eoperaciones);
 		
-		bsumar = new JButton("Buscar");
+		bsumar = new JButton("Buscar en KMP");
 		bsumar.setBounds(240 , 100 , 250 , 20);
 		add(bsumar);
-		bsumar.setActionCommand("BUSCAR");
+		bsumar.setActionCommand("KMP");
 		
 		JCheckBox btnMayusculas = new JCheckBox("Desea tener en cuenta las mayusculas ?");
 		btnMayusculas.setBounds(50, 127, 97, 23);
 		add(btnMayusculas);
 		
+		brestar = new JButton("Buscar en BM");
+		brestar.setBounds(340, 123, 272, 20);
+		add(brestar);
+		brestar.setActionCommand("BM");
 		
 	}
 

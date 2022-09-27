@@ -8,14 +8,11 @@ import java.util.Map;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
 import javax.swing.border.TitledBorder;
 
 public class PanelRespuesta extends JPanel{
 	
-	private JTextArea erta;
-	private JScrollPane scrollpane;
+	private JLabel erta;
 		
 	public PanelRespuesta() {
 		setLayout(null);
@@ -30,26 +27,23 @@ public class PanelRespuesta extends JPanel{
 		setBackground(new Color(232,232,232));
 		setBorder(new TitledBorder("Panel de respuesta"));
 		
-		erta = new JTextArea();
+		erta = new JLabel();
         Font font =  new Font("Times new Roman", Font.BOLD,11);
         Map attributes = font.getAttributes();
         attributes.put(TextAttribute.UNDERLINE, TextAttribute.UNDERLINE_ON);
         erta.setFont(font.deriveFont(attributes));
-        erta.setLineWrap(true);
-        scrollpane=new JScrollPane(erta);
-        scrollpane.setBounds(10, 20, 450, 200);
-        add(scrollpane);
+        erta.setForeground(Color.red);
 	
-		erta.setBounds(10, 20, 450, 200);
+		erta.setBounds(10, 70, 200, 20);
 		add(erta);
 				
 	}
 
-	public JTextArea getErta() {
+	public JLabel getErta() {
 		return erta;
 	}
 
-	public void setErta(JTextArea erta) {
+	public void setErta(JLabel erta) {
 		this.erta = erta;
 	}
 	
