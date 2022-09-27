@@ -5,6 +5,7 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JOptionPane;
 
+import co.edu.unbosque.model.AlgoritmoKMP;
 import co.edu.unbosque.model.LeerArchivo;
 import co.edu.unbosque.model.Numero;
 
@@ -16,6 +17,8 @@ public class Controller implements ActionListener{
 	private VentanaPrincipal ventana;
 	private Numero n1;
 	private Numero n2;
+	private AlgoritmoKMP kmp;
+	
 	LeerArchivo le = new LeerArchivo();
 	
 
@@ -57,10 +60,10 @@ public class Controller implements ActionListener{
 			n1 = new Numero(aux_int, aux);
 			
 
-	
 			
 			//palabra del archivo
 			String rta = n1.setPalabra(le.leer());
+			kmp.iniciar( rta,aux);		
 			
 			System.out.println("El contenido del archivo es  : "+rta);
 			
@@ -72,6 +75,12 @@ public class Controller implements ActionListener{
 				JOptionPane.showMessageDialog(null, "No hay palabra a buscar ", "?", 3);
 			}
 		}
+		
+	}
+
+
+	private void kmp.iniciar(aux_int, rta);(String rta, String aux) {
+		// TODO Auto-generated method stub
 		
 	}
 	

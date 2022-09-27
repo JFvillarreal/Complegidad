@@ -38,9 +38,8 @@ public class AlgoritmoKMP {
 			}
 		}
 	}
-	public static void main(String text) {
-		 text = text;
-		String part = "ca";
+	public void iniciar(String text,String part) {
+System.out.println("Entre aca ");
 		KMP(text, part);
 	}
 }
