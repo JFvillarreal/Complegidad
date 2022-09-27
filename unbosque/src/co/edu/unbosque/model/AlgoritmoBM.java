@@ -36,9 +36,9 @@ public class AlgoritmoBM {
 			}
 		}
 	}
-	public static void main(String[]args) {
-		 char txt[] = "ABCAAABCDABCABC".toCharArray();
-	     char pat[] = "ABC".toCharArray();
-	     buscar(txt, pat);
+	public  void iniciar(String txt, String pat) {
+		 char text[] = txt.toCharArray();
+	     char patron[] = pat.toCharArray();
+	     buscar(text, patron);
 	}
 }
