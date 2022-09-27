@@ -1,5 +1,7 @@
 package co.edu.unbosque.model;
 
+import javax.swing.JOptionPane;
+
 /**
  * ejecuta el algoritmo Boyer Moore, Este procesa el patrón 
  * y crea arrays diferentes para cada heurística. 
@@ -42,6 +44,7 @@ public class AlgoritmoBM {
 			}
 			if(j<0) {
 				System.out.println("patron encontrado en "+ s);
+				JOptionPane.showMessageDialog(null, "Se encontro la palabra en "+s, "?", 3);
 				s+=(s + longPatron<longTexto)? longTexto - badchar[texto[s+longPatron]]:1;
 			}
 			
