@@ -33,16 +33,15 @@ public class Controller implements ActionListener{
 
 	
 	public void asignarOyentes() {
-<<<<<<< HEAD
+
 		ventana.getPdatos().getBsumar().addActionListener(this);
 //		ventana.getPdatos().getBrestar().addActionListener(this);
-=======
-		
+
 			ventana.getPdatos().getBsumar().addActionListener(this);
 			ventana.getPdatos().getBrestar().addActionListener(this);
 
 
->>>>>>> branch 'main' of https://github.com/JFvillarreal/Complegidad
+
 	}
 
 	@Override
@@ -57,25 +56,22 @@ public class Controller implements ActionListener{
 //			aux_int = Integer.parseInt(aux);
 			n1 = new Numero(aux_int, aux);
 			
-<<<<<<< HEAD
+
 //			aux = ventana.getPdatos().getCnum2().getText();
 //			aux_int = Integer.parseInt(aux);
-=======
+
 			aux = ventana.getPdatos().getCnum2().getText();
 			aux_int = aux;
->>>>>>> branch 'main' of https://github.com/JFvillarreal/Complegidad
 
 			String rta = n1.setPalabra(le.leer());
 			
-			
-<<<<<<< HEAD
+
 			ventana.getPrespuesta().getErta().setText("El contenido del  archivo es: "+le.leer());
-=======
+
 			ventana.getPrespuesta().getErta().setText(le.leer());
 			}catch(NullPointerException ex) {
 				JOptionPane.showMessageDialog(null, "No hay palabra a buscar", "?", 3);
 			}
->>>>>>> branch 'main' of https://github.com/JFvillarreal/Complegidad
 		}
 		
 	}
