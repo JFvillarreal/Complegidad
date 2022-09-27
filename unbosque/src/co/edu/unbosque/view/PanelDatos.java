@@ -44,20 +44,12 @@ public class PanelDatos extends JPanel{
 		cnum1.setBounds(240 , 50 , 250 , 20);
 		add(cnum1);
 		
-		enum2 = new JLabel("Como quitamos esto xd: ");
-		enum2.setBounds(50, 100, 170, 20);
-		add(enum2);
-		
-		cnum2 = new JTextField();
-		cnum2.setBounds(240 , 100 , 250 , 20);
-		add(cnum2);
-		
 		eoperaciones = new JLabel("Operaciones: ");
-		eoperaciones.setBounds(50, 150, 170, 20);
+		eoperaciones.setBounds(50, 100, 170, 20);
 		add(eoperaciones);
 		
 		bsumar = new JButton("Buscar");
-		bsumar.setBounds(240, 150, 80, 20);
+		bsumar.setBounds(240 , 100 , 250 , 20);
 		add(bsumar);
 		bsumar.setActionCommand("BUSCAR");
 		
