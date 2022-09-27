@@ -28,7 +28,7 @@ public class PanelRespuesta extends JPanel{
 		setBorder(new TitledBorder("Panel de respuesta"));
 		
 		erta = new JLabel();
-        Font font =  new Font("Times new Roman", Font.BOLD, 20);
+        Font font =  new Font("Times new Roman", Font.BOLD,15);
         Map attributes = font.getAttributes();
         attributes.put(TextAttribute.UNDERLINE, TextAttribute.UNDERLINE_ON);
         erta.setFont(font.deriveFont(attributes));
