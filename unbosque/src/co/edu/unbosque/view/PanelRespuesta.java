@@ -6,6 +6,7 @@ import java.awt.font.TextAttribute;
 import java.util.Map;
 
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.border.TitledBorder;
 
@@ -23,7 +24,6 @@ public class PanelRespuesta extends JPanel{
 	
 	public void inicializarComponentes() {
 		
-	     
 		setBackground(new Color(232,232,232));
 		setBorder(new TitledBorder("Panel de respuesta"));
 		

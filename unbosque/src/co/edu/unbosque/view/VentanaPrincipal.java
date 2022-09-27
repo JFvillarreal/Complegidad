@@ -3,6 +3,7 @@ package co.edu.unbosque.view;
 import java.awt.Color;
 
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 public class VentanaPrincipal extends JFrame{
 
@@ -11,7 +12,7 @@ public class VentanaPrincipal extends JFrame{
 	
 	public VentanaPrincipal() {
 		
-		setTitle("Mi primera calculadora");
+		setTitle("Busqueda de palabra");
 		setSize(600, 500);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		getContentPane().setBackground(Color.ORANGE);
@@ -22,10 +23,11 @@ public class VentanaPrincipal extends JFrame{
 		setResizable(false);
 		setLocationRelativeTo(null);
 		setVisible(true);
+		
+		
 	}
 	
 	public void inicializarComponentes() {
-		
 		pdatos = new PanelDatos();
 		pdatos.setBounds(25, 25, 535, 250);
 		getContentPane().add(pdatos);
