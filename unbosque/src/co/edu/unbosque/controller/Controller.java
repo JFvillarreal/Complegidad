@@ -60,7 +60,7 @@ public class Controller implements ActionListener{
 			
 			ventana.getPrespuesta().getErta().setText(le.leer());
 			}catch(NullPointerException ex) {
-				JOptionPane.showMessageDialog(null, "No hay palabra a buscar", "?", 3);
+				JOptionPane.showMessageDialog(null, "No hay palabra a buscar ", "?", 3);
 			}
 		}
 		
