@@ -63,12 +63,8 @@ public class PanelDatos extends JPanel{
 		add(bsumar);
 		bsumar.setActionCommand("KMP");
 		
-		JCheckBox btnMayusculas = new JCheckBox("Desea tener en cuenta las mayusculas ?");
-		btnMayusculas.setBounds(50, 127, 97, 23);
-		add(btnMayusculas);
-		
 		brestar = new JButton("Buscar en BM");
-		brestar.setBounds(340, 123, 272, 20);
+		brestar.setBounds(240, 123, 250, 20);
 		add(brestar);
 		brestar.setActionCommand("BM");
 		
