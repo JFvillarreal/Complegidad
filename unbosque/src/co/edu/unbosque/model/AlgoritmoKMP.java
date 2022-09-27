@@ -1,6 +1,7 @@
 package co.edu.unbosque.model;
 import java.util.ArrayList;
 
+import javax.swing.JOptionPane;
 import javax.swing.text.Highlighter;
 import javax.swing.text.Highlighter.HighlightPainter;
 
@@ -33,11 +34,12 @@ public class AlgoritmoKMP {
 				next[i+1] = j + 1;
 			}
 		}
+		int contador=0;
 		for (int i = 0,j =0; i < texto.length(); i++) {
 			if (j < patron.length() && texto.charAt(i)==patron.charAt(j)) {
 				if (++j == patron.length()) {
 					System.out.println("patrones en " + (i-j+1));
-					
+					contador++;
 				}
 			}
 			else if (j>0)
@@ -46,11 +48,12 @@ public class AlgoritmoKMP {
 				i--;
 			}
 	    	
-
+			
 			
 		}
 		
-
+		JOptionPane.showMessageDialog(null, "La Palabra buscada se repite: "+contador+" Veces", "?", 3);
+		System.out.println("veces"+contador);
 		
 	}
 	public void iniciar(String text,String part) {
