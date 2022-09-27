@@ -44,6 +44,15 @@ public class PanelDatos extends JPanel{
 		cnum1.setBounds(240 , 50 , 250 , 20);
 		add(cnum1);
 		
+		enum2 = new JLabel("");
+		enum2.setBounds(50, 100, 170, 20);
+		add(enum2);
+		
+		cnum2 = new JTextField();
+		cnum2.setBounds(0 , 0 , 0 , 0);
+		cnum2.setVisible(false);
+		add(cnum2);
+		
 		eoperaciones = new JLabel("Operaciones: ");
 		eoperaciones.setBounds(50, 100, 170, 20);
 		add(eoperaciones);
