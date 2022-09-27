@@ -83,7 +83,6 @@ public class Controller implements ActionListener{
 			n1 = new Numero(aux_int, aux);
 			
 
-	
 			
 			//palabra del archivo
 			String rta = n1.setPalabra(le.leer());
