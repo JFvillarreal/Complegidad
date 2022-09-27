@@ -5,6 +5,7 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JOptionPane;
 
+import co.edu.unbosque.model.AlgoritmoKMP;
 import co.edu.unbosque.model.LeerArchivo;
 import co.edu.unbosque.model.Numero;
 
@@ -17,7 +18,7 @@ public class Controller implements ActionListener{
 	private Numero n1;
 	private Numero n2;
 	LeerArchivo le = new LeerArchivo();
-	
+	 AlgoritmoKMP alkm= new AlgoritmoKMP();
 
 	public Controller() {
 
@@ -63,7 +64,7 @@ public class Controller implements ActionListener{
 			String rta = n1.setPalabra(le.leer());
 			
 			System.out.println("El contenido del archivo es  : "+rta);
-			
+			alkm.iniciar(rta,aux);
 			
 			ventana.getPrespuesta().getErta().setText("El contenido del  archivo es: "+le.leer());
 
