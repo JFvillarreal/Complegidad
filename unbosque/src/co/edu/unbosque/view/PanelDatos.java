@@ -4,6 +4,7 @@ import java.awt.Color;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.border.TitledBorder;
@@ -33,7 +34,7 @@ public class PanelDatos extends JPanel{
 		setBackground(Color.cyan);
 		setBorder(new TitledBorder("Panel de datos"));
 		
-		enum1 = new JLabel("Ingrese primer n�mero: ");
+		enum1 = new JLabel("Ingrese la palabra a buscar: ");
 		enum1.setBounds(50, 50, 170, 20);
 		add(enum1);
 		
@@ -43,7 +44,7 @@ public class PanelDatos extends JPanel{
 		cnum1.setBounds(240 , 50 , 250 , 20);
 		add(cnum1);
 		
-		enum2 = new JLabel("Ingrese segundo n�mero: ");
+		enum2 = new JLabel("Como quitamos esto xd: ");
 		enum2.setBounds(50, 100, 170, 20);
 		add(enum2);
 		
@@ -55,10 +56,10 @@ public class PanelDatos extends JPanel{
 		eoperaciones.setBounds(50, 150, 170, 20);
 		add(eoperaciones);
 		
-		bsumar = new JButton("Sumar");
+		bsumar = new JButton("Buscar");
 		bsumar.setBounds(240, 150, 80, 20);
 		add(bsumar);
-		bsumar.setActionCommand("SUMAR");
+		bsumar.setActionCommand("BUSCAR");
 		
 //		brestar = new JButton("Restar");
 //		brestar.setBounds(340, 150, 80, 20);

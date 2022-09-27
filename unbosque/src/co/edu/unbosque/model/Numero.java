@@ -2,28 +2,28 @@ package co.edu.unbosque.model;
 
 public class Numero {
 	
-	private int num;
+	private String num;
 	private String palabra;
 	
 	public Numero() {
-		num = 0;
+		num = null;
 	}
 	
-	public Numero( int n,String palabra) {
+	public Numero( String n,String palabra) {
 		num = n;
 	}
 	
-	public int sumarNumeros(Numero otro) {
+	public String sumarNumeros(Numero otro) {
 		return num + otro.num;
 	}
 	
 	
 
-	public int getNum() {
+	public String getNum() {
 		return num;
 	}
 
-	public void setNum(int num) {
+	public void setNum(String num) {
 		this.num = num;
 	}
 
