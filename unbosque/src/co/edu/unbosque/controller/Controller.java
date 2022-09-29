@@ -9,19 +9,21 @@ import co.edu.unbosque.model.AlgoritmoBM;
 import co.edu.unbosque.model.AlgoritmoKMP;
 import co.edu.unbosque.model.LeerArchivo;
 import co.edu.unbosque.model.Palabra;
-
+import co.edu.unbosque.view.LineHighlightPainter;
+import co.edu.unbosque.view.Panel5;
 import co.edu.unbosque.view.VentanaPrincipal;
 /**
  * funciona para generar la interfaz y llamar metodos de los algoritmos
- * @author Villarreal, Muños, Hernadez
+ * @author Villarreal, Muï¿½os, Hernadez
  *
  */
 public class Controller implements ActionListener{
 	
-
+	private Panel5 panel5;
 	private VentanaPrincipal ventana;
 	private Palabra n1;
 	private Palabra n2;
+//	private LineHighlightPainter pat;
 	LeerArchivo le = new LeerArchivo();
 	AlgoritmoKMP alkm= new AlgoritmoKMP();
 	AlgoritmoBM BM = new AlgoritmoBM();
@@ -67,6 +69,7 @@ public class Controller implements ActionListener{
 			try {
 			aux = ventana.getPdatos().getCnum1().getText();
 			System.out.println("La palabra que se buscara es : "+aux);
+			
 //			aux_int = Integer.parseInt(aux);
 			n1 = new Palabra(aux_int, aux);
 			
@@ -78,7 +81,7 @@ public class Controller implements ActionListener{
 			
 			System.out.println("El contenido del archivo es  : "+rta);
 			alkm.iniciar(rta,aux);
-			
+			panel5.iniciar(rta, aux);
 			ventana.getPrespuesta().getErta().setText("El contenido del  archivo es: "+le.leer());
 
 			ventana.getPrespuesta().getErta().setText(le.leer());

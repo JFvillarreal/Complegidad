@@ -12,7 +12,7 @@ import javax.swing.JCheckBox;
 /**
  *la interfaz para que el ususario puede ingresar
  * el praton que desea buscar 
- * @author Villarreal, Muños, Hernadez
+ * @author Villarreal, Muï¿½os, Hernadez
  *
  */
 public class PanelDatos extends JPanel{

@@ -6,12 +6,14 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 /**
  * unificacion de las interfazes en una sola
- * @author Villarreal, Muños, Hernadez
+ * @author Villarreal, Muï¿½os, Hernadez
  *
  */
 public class VentanaPrincipal extends JFrame{
 
 	private PanelDatos pdatos;
+	private Panel5 pdatos5;
+	private LineHighlightPainter presaltado;
 	private PanelRespuesta prespuesta;
 	
 	public VentanaPrincipal() {
@@ -36,9 +38,19 @@ public class VentanaPrincipal extends JFrame{
 		pdatos.setBounds(25, 25, 535, 250);
 		getContentPane().add(pdatos);
 		
-		prespuesta = new PanelRespuesta();
-		prespuesta.setBounds(25, 300, 535, 140);
-		getContentPane().add(prespuesta);
+		pdatos5 = new Panel5();
+		pdatos5.setBounds(25, 300, 535, 140);
+		getContentPane().add(pdatos5);
+			
+//		presaltado = new LineHighlightPainter();
+//  	presaltado.setBounds(25, 25, 535, 250);
+//		getContentPane().add(presaltado);
+		
+//		prespuesta = new PanelRespuesta();
+//		prespuesta.setBounds(25, 300, 535, 140);
+//		getContentPane().add(prespuesta);
+		
+		
 	}
 
 	public PanelDatos getPdatos() {

@@ -9,9 +9,14 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.border.TitledBorder;
+import javax.swing.text.DefaultHighlighter;
+import javax.swing.text.Highlighter;
+import javax.swing.text.JTextComponent;
+
+import co.edu.unbosque.view.LineHighlightPainter.MyHighlightPainter;
 /**
  * 
- * @author  Villarreal, Muños, Hernadez
+ * @author  Villarreal, Muï¿½os, Hernadez
  *
  */
 public class PanelRespuesta extends JPanel{
@@ -50,6 +55,8 @@ public class PanelRespuesta extends JPanel{
 	public void setErta(JLabel erta) {
 		this.erta = erta;
 	}
+	
+	
 	
 	
 }

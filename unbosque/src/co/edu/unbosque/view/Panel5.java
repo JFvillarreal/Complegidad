@@ -1,53 +1,70 @@
 package co.edu.unbosque.view;
 
-import java.lang.reflect.InvocationTargetException;
-import javax.swing.*;
-import javax.swing.text.*;
-import java.awt.*;
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.font.TextAttribute;
+import java.util.Map;
 
-public class LineHighlightPainter extends JPanel{
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+import javax.swing.border.TitledBorder;
+import javax.swing.text.BadLocationException;
+import javax.swing.text.DefaultHighlighter;
+import javax.swing.text.Document;
+import javax.swing.text.Highlighter;
+import javax.swing.text.JTextComponent;
 
-    String revisedText = "jafe es un mk a b c dfsd ss aa asdas  ";
-    
+import co.edu.unbosque.view.LineHighlightPainter.MyHighlightPainter;
+/**
+ * 
+ * @author  Villarreal, Mu�os, Hernadez
+ *
+ */
+public class Panel5 extends JPanel{
+	
+	private JLabel erta;
+	 String revisedText = "jpruebas  ";
     String token = "un";
 
-    public  void iniciar(String envio,String busco) {
-    	
-    	revisedText=envio;
-    	token=busco;
-        try {
-            SwingUtilities.invokeAndWait(new Runnable() {
+		
+	public Panel5() {
+		setLayout(null);
+		
+	inicializarComponentes();
+		
+		setVisible(true);
+	}
+	
+	public void inicializarComponentes() {
+		
 
-                public void run() {
-                    new LineHighlightPainter().createAndShowGUI();
-                }
-            });
-        } catch (InterruptedException ex) {
-            // ignore
-        } catch (InvocationTargetException ex) {
-            // ignore
-        }
-    }
+		erta = new JLabel();
+        
+		
+	     JFrame frame = new JFrame("LineHighlightPainter demo");
+	   
 
-    public void createAndShowGUI() {
-        JFrame frame = new JFrame("LineHighlightPainter demo");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	        JTextArea area = new JTextArea(9, 45);
+	        area.setLineWrap(true);
+	        area.setWrapStyleWord(true);
+	        area.setText(revisedText);
 
-        JTextArea area = new JTextArea(9, 45);
-        area.setLineWrap(true);
-        area.setWrapStyleWord(true);
-        area.setText(revisedText);
+	        // Highlighting part of the text in the instance of JTextArea
+	        // based on token.
+	        highlight(area, token);
 
-        // Highlighting part of the text in the instance of JTextArea
-        // based on token.
-        highlight(area, token);
+	        frame.getContentPane().add(new JScrollPane(area), BorderLayout.CENTER);
+	        frame.pack();
+	        frame.setVisible(true);
 
-        frame.getContentPane().add(new JScrollPane(area), BorderLayout.CENTER);
-        frame.pack();
-        frame.setVisible(true);
-    }
-
-    // Creates highlights around all occurrences of pattern in textComp
+				
+	}
+	   // Creates highlights around all occurrences of pattern in textComp
     public void highlight(JTextComponent textComp, String pattern) {
         // First remove all old highlights
         removeHighlights(textComp);
@@ -91,4 +108,6 @@ public class LineHighlightPainter extends JPanel{
             super(color);
         }
     }
+	
+	
 }

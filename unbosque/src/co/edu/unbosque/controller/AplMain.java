@@ -1,7 +1,7 @@
 package co.edu.unbosque.controller;
 /**
  * llama al constructor del paquete controller
- * @author Villarreal, Muños, Hernadez
+ * @author Villarreal, MuÃ±oz, Hernadez
  *
  */
 public class AplMain {
