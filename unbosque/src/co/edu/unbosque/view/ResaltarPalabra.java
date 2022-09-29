@@ -22,6 +22,7 @@ public class ResaltarPalabra extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField campoEscribir;
+	private JTextArea campoArea;
 
 	/**
 	 * Launch the application.
@@ -68,7 +69,7 @@ public class ResaltarPalabra extends JFrame {
 		contentPane.add(campoEscribir);
 		campoEscribir.setColumns(10);
 		
-		JTextArea campoArea = new JTextArea();
+		campoArea = new JTextArea();
 		campoArea.setBounds(45, 154, 331, 96);
 		contentPane.add(campoArea);
 		
@@ -78,7 +79,7 @@ public class ResaltarPalabra extends JFrame {
 	}
 	
 	public void btnNewButtonActionPerformed(java.awt.event.ActionEvent evt) {
-//		resalto(campoArea,campoEscribir.getText());
+	resalto(campoArea,campoEscribir.getText());
 	}
 	
 	
