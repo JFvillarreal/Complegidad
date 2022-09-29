@@ -4,20 +4,20 @@ package co.edu.unbosque.model;
  * @author  Villarreal, Muños, Hernadez
  *
  */
-public class Numero {
+public class Palabra {
 	
 	private String num;
 	private String palabra;
 	
-	public Numero() {
+	public Palabra() {
 		num = null;
 	}
 	
-	public Numero( String n,String palabra) {
+	public Palabra( String n,String palabra) {
 		num = n;
 	}
 	
-	public String sumarNumeros(Numero otro) {
+	public String sumarNumeros(Palabra otro) {
 		return num + otro.num;
 	}
 	

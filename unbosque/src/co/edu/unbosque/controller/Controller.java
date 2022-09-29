@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
 import co.edu.unbosque.model.AlgoritmoBM;
 import co.edu.unbosque.model.AlgoritmoKMP;
 import co.edu.unbosque.model.LeerArchivo;
-import co.edu.unbosque.model.Numero;
+import co.edu.unbosque.model.Palabra;
 
 import co.edu.unbosque.view.VentanaPrincipal;
 /**
@@ -20,8 +20,8 @@ public class Controller implements ActionListener{
 	
 
 	private VentanaPrincipal ventana;
-	private Numero n1;
-	private Numero n2;
+	private Palabra n1;
+	private Palabra n2;
 	LeerArchivo le = new LeerArchivo();
 	AlgoritmoKMP alkm= new AlgoritmoKMP();
 	AlgoritmoBM BM = new AlgoritmoBM();
@@ -68,7 +68,7 @@ public class Controller implements ActionListener{
 			aux = ventana.getPdatos().getCnum1().getText();
 			System.out.println("La palabra que se buscara es : "+aux);
 //			aux_int = Integer.parseInt(aux);
-			n1 = new Numero(aux_int, aux);
+			n1 = new Palabra(aux_int, aux);
 			
 
 	
@@ -91,7 +91,7 @@ public class Controller implements ActionListener{
 			aux = ventana.getPdatos().getCnum1().getText();
 			System.out.println("La palabra que se buscara es : "+aux);
 //			aux_int = Integer.parseInt(aux);
-			n1 = new Numero(aux_int, aux);
+			n1 = new Palabra(aux_int, aux);
 			
 
 			
