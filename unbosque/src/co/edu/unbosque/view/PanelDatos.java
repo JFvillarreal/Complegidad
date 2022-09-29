@@ -9,7 +9,12 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.border.TitledBorder;
 import javax.swing.JCheckBox;
-
+/**
+ *la interfaz para que el ususario puede ingresar
+ * el praton que desea buscar 
+ * @author Villarreal, Muños, Hernadez
+ *
+ */
 public class PanelDatos extends JPanel{
 	
 	private JLabel enum1;

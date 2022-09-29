@@ -3,7 +3,12 @@ package co.edu.unbosque.view;
 import java.util.Scanner;
 
 import javax.swing.JOptionPane;
-
+/**
+ * sirve para  el mostrar en la consola mensjes en la ejecucion
+ * de los algoritmos
+ * @author Villarreal, Muños, Hernadez
+ *
+ */
 public class ViewConsola {
 	
 	private Scanner leer;

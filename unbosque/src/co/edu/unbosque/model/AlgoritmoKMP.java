@@ -7,6 +7,16 @@ import javax.swing.text.Highlighter.HighlightPainter;
 
 import co.edu.unbosque.view.VentanaPrincipal;
 import co.edu.unbosque.view.VistaVentanas;
+/**
+ * KMP preprocesa pat[] y construye un lps[] auxiliar de tamaño m 
+ * (El mismo tamaño que el patrón) 
+ * el cual es usado para saltar caracteres mientras se coteja.
+ * El algoritmo KMP usa la propiedad de degeneración 
+ * (Usar los subpatrones que se puedan crear a partir del patrón)
+ *  del patrón y mejora el peor caso de complejidad de O(n). 
+ * @author Villarreal, Muños, Hernadez
+ *
+ */
 public class AlgoritmoKMP {
 
 	private static VistaVentanas vista;

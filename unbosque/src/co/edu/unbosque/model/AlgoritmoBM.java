@@ -2,6 +2,15 @@ package co.edu.unbosque.model;
 
 import javax.swing.JOptionPane;
 
+/**
+ * ejecuta el algoritmo Boyer Moore, Este procesa el patrón 
+ * y crea arrays diferentes para cada heurística. 
+ * En cada paso desliza el patrón por el máximo de 
+ * deslices sugeridos por las dos heurísticas, 
+ * entonces usa la mejor de las dos heurísticas en cada paso.
+ * @author Villarreal, Muños, Hernadez
+ *
+ */
 public class AlgoritmoBM {
 
 	static int valorMaximo = 256;
@@ -17,6 +26,11 @@ public class AlgoritmoBM {
 			badchar[(int) str[i]] = i;
 		}
 	}
+	/**
+	 * busca los patrones de un texto usando BM
+	 * @param texto un char cogido del metodo inicar
+	 * @param patron un char cogido del metodo inicar
+	 */
 	public static void buscar(char texto[], char patron[]) {
 		int longPatron = patron.length;
 		int longTexto =  texto.length;
@@ -29,9 +43,8 @@ public class AlgoritmoBM {
 				j--;
 			}
 			if(j<0) {
-				
 				System.out.println("patron encontrado en "+ s);
-				JOptionPane.showMessageDialog(null, "La Palabra buscada se repite en: "+s, "?", 3);
+				JOptionPane.showMessageDialog(null, "Se encontro la palabra en "+s, "?", 3);
 				s+=(s + longPatron<longTexto)? longTexto - badchar[texto[s+longPatron]]:1;
 			}
 			
@@ -40,6 +53,11 @@ public class AlgoritmoBM {
 			}
 		}
 	}
+	/**
+	 * metodo para trasformar Strings cogidos de la interfaz
+	 * @param txt string cogido del archivo.txt
+	 * @param pat Strin cogido de la interfaz por el usuario
+	 */
 	public  void iniciar(String txt, String pat) {
 		 char text[] = txt.toCharArray();
 	     char patron[] = pat.toCharArray();
