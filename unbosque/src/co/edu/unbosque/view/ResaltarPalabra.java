@@ -78,7 +78,7 @@ public class ResaltarPalabra extends JFrame {
 	}
 	
 	public void btnNewButtonActionPerformed(java.awt.event.ActionEvent evt) {
-		resalto(campoArea,campoEscribir.getText());
+//		resalto(campoArea,campoEscribir.getText());
 	}
 	
 	
